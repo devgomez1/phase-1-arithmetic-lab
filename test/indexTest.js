@@ -8,7 +8,7 @@ describe('index.js', function() {
     it("is an equation whose multiplied results will equal 62", function() {
       expect(num1).to.be.a('number')
       expect(num2).to.be.a('number')
-      expect(multiply).to.eq(62)
+      expect(multiply(num1, num2)).to.eq(62)
     });
   });
   describe('random', function() {
@@ -21,7 +21,7 @@ describe('index.js', function() {
     it("is an equation that calculates a remainder that is equal to 4", function() {
       expect(num3).to.be.a('number')
       expect(num4).to.be.a('number')
-      expect(mod).to.eq(4)
+      expect(mod(num3, num4)).to.eq(4)
     });
   });
   describe('max', function() {
